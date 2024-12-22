@@ -718,7 +718,7 @@ describe('when logged in', function() {
     // highlight-end
   })
 
-  it('a new note can be created', function() {
+  it('can create a new note', function() {
     // ...
   })
 
@@ -726,7 +726,7 @@ describe('when logged in', function() {
 })
 ```
 
-We can access to the response of a [cy.request](https://docs.cypress.io/api/commands/request.html) with the [_then_](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress#The-Cypress-Command-Queue) method.  Under the hood <i>cy.request</i>, like all Cypress commands, are [asynchronous](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress#Commands-Are-Asynchronous).
+We can access the response of a [cy.request](https://docs.cypress.io/api/commands/request.html) with the [_then_](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress#The-Cypress-Command-Queue) method.  Under the hood <i>cy.request</i>, like all Cypress commands, are [asynchronous](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress#Commands-Are-Asynchronous).
 The callback function saves the details of a logged-in user to localStorage, and reloads the page.
 Now there is no difference to a user logging in with the login form.
 
